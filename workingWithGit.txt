@@ -1,3 +1,35 @@
 hello Bhawna! :D 
 Heyy!!! GIT will be fun xD
 Time to sleep xD Good nightttt
+Overview : 
+1. git setup 
+	a. git init 
+	b. git config global --list 
+	c. git config global user.name "user_name" 
+	d. git remote -v 
+	e. git remote add origin "remote_url" 
+
+2. git - update changes in branch (master) (assuming latest master is there)
+	0. make changes in the branch 
+	a. git status 
+	b. git add . (adds all untracked files ) 
+	c. git commit -m "changes made" 
+	d. git fetch , git pull origin master (good practice to fetch first before push) 
+	e. git push origin master 
+
+3. git branches 
+	a. git checkout -b "branch_name" (spaces not allowed in branch name) - creating a new branch 
+	b. git checkout "branch_name" - switches to an existing branch 
+
+4. Complete process commands - (curr branch - master) 
+	a. git fetch 
+	b. git pull origin master (now your local master is up-to-date with origin/master) 
+	c. git checkout-b "new_branch" 
+	d. MAKE THE REQUIRED CHANGES FOR YOUR FEATURE 
+	e. git add . 
+	f. git commit -m "commit_message" 
+	g. git fetch 
+	h. git pull origin master (resolve conflicts, if any)
+	i. git push origin new_branch
+	j. CREATE PR FROM new_branch TO master 
+	k. REVIEW AND MERGE THE PR 
